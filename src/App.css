@@ -1,0 +1,289 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+.App{
+  background-color: rgb(13, 13, 13);
+  color: gainsboro;
+
+  height: 100vh;
+  width: 100vw;
+  padding: 50px 80px;
+}
+.content {
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), inset 0 0 20px rgba(111, 107, 107, 0.5), inset 0 0 100px rgba(0, 0, 255, 0.5);
+}
+
+.content .header{
+  display: flex;
+  position: relative;
+}
+.header .logo{
+  font-size: 36px;
+  width: 50%;
+  font-weight: bold;
+    text-transform: uppercase;
+    font-family: verdana;
+    font-weight: 700;
+    color: gainsboro;
+    text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 7px 1px #919191,
+    1px 8px 1px #919191,
+    1px 9px 1px #919191,
+    1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+    text-align: start;
+}
+
+.header .links{
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.header .links a{
+  color: gainsboro;
+  margin-left: 26px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header .links a:hover{
+  color: white;
+}
+.main{
+  display: flex;
+  justify-content: space-around;
+}
+.main h1{
+  margin-bottom: 26px;
+  font-weight: 200;
+}
+.main .left div{
+  margin-bottom: 16px;
+  border-left: 3px solid #0039a6;
+  padding-left: 26px;
+}
+.main .left{
+  width: 50%;
+}
+.main .right{
+  width: 30%;
+  padding-top: 30px;
+}
+.left div p{
+  margin-bottom: 16px;
+}
+.left div a{
+  color: gainsboro;
+  text-decoration: none;
+}
+.left div a:hover{
+  opacity: 0.8;
+}
+.main .right ul {
+  list-style: none;
+  padding: 16px 0 0 26px;
+  border-image: linear-gradient(to right, blue 20%, rgb(13, 13, 13) 80%) 1 1;
+  border-top: 2px solid ;
+  border-left: 2px solid;
+}
+
+ul li{
+  margin-bottom: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+ul li:hover{
+  opacity: 0.8;
+  transform: scale(1.01);
+}
+.footer{
+  height: 10vh;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin-top: 40px;
+}
+
+ */
+
+
+ /* App.css */
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(13, 13, 13);
+  color: gainsboro;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 15px 60px;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header .logo{
+  font-size: 36px;
+  width: 50%;
+  font-weight: bold;
+    text-transform: uppercase;
+    font-family: verdana;
+    font-weight: 700;
+    color: gainsboro;
+    text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 7px 1px #919191,
+    1px 8px 1px #919191,
+    1px 9px 1px #919191,
+    1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+    text-align: start;
+}
+.links {
+  display: flex;
+  gap: 15px;
+}
+
+.links a {
+  text-decoration: none;
+  color: gainsboro;
+  font-size: 30px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+.left {
+  flex-grow: 1;
+  max-width: 600px;
+  padding-top: 50px;
+  transition: padding-top 0.5s ease-in-out;
+}
+
+.left h1 {
+  font-size: 36px;
+}
+
+.left p {
+  font-size: 18px;
+}
+
+.left a{
+  color: gainsboro;
+  text-decoration: none;
+}
+.left a:hover{
+  opacity: 0.8;
+}
+
+.right {
+  flex-basis: 300px;
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+.right h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.right li {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  background-color: #ddd;
+  color: black;
+}
+
+
+.right li:hover {
+  opacity: 0.8;;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .left {
+    padding-top: 100px;
+  }
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
